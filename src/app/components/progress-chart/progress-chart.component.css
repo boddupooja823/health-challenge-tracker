@@ -1,0 +1,33 @@
+/* Container to center the chart */
+.progress-chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* Circular progress chart */
+  .progress-chart {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: conic-gradient(
+      #4caf50 calc(var(--percentage) * 1%), /* Green */
+      #ffeb3b calc(var(--percentage) * 1%), /* Yellow */
+      #f44336 calc(var(--percentage) * 1%)  /* Red */
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Text inside the progress chart */
+  .percentage-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+  }
+  
